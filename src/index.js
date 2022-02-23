@@ -12,7 +12,7 @@ const Root = () => {
   const persistor = persistStore(store);
   return (
     <React.StrictMode>
-      <Provider store={store}>
+      <Provider store={store}> 
         <PersistGate loading={null} persistor={persistor}>
           <App />
         </PersistGate>
