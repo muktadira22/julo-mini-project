@@ -8,7 +8,7 @@ const List = ({ data }) => {
     <div className="next-3-days">
       <h2 className="next-3-days__heading">Next 3 days</h2>
       <div className="next-3-days__container">
-        {data.map((item, key) => {
+        {data.forEach((item, key) => {
           const day = moment().add(key + 1, "days");
           if (key < 3)
             return (

@@ -40,7 +40,7 @@ function App() {
           console.log(err);
         });
     });
-  }, []);
+  }, [dispatch]);
 
   const getColors = (colors) => {
     console.log(colors);
