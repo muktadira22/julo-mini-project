@@ -10,6 +10,8 @@ const Layout = (props) => {
   );
 };
 
-Layout.propTypes = {};
+Layout.propTypes = {
+  children: PropTypes.any,
+};
 
 export default Layout;

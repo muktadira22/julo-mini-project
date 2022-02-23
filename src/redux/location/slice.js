@@ -33,10 +33,7 @@ export const getLocationName = createAsyncThunk(
 const historySlice = createSlice({
   name: "history",
   initialState,
-  reducers: {
-    addHistory: (state) => {},
-    removeHistory: (state) => {},
-  },
+  reducers: {},
   extraReducers(builder) {
     builder
       // Login Builder

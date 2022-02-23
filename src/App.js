@@ -9,14 +9,12 @@ import { KtoC } from "./utils/kelvinToCelcius";
 import List from "./components/List";
 import { ColorExtractor } from "react-color-extractor";
 import Layout from "./components/Layout";
-import Star from "./assets/icons/star.png";
 import StarFull from "./assets/icons/star-full.png";
 
 function App() {
   const dispatch = useDispatch();
   const [currentResponse, setCurrentResponse] = useState(ExampleResponse);
   const [dayResponse, setDayResponse] = useState(ExampleResponseDay.daily);
-  const [colors, setColors] = useState({});
   const today = moment();
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(function (position) {
